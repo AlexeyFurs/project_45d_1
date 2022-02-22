@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Введдите имя:
+<input type="text" id="uName">
+<button onclick="showMessage(uName.value,'Привет')">Нажмите</button>
+
+
+    <script>
+     name = "Вася";
+
+        function showMessage(userName, hello){
+            alert(`${hello}, ${userName}`);
+        }
+
+
+        showMessage(name);
+        showMessage("Петя");
+        name = "Маша";
+        showMessage(name);
+       
+       function hello() {
+           name = uName.value;
+                      showMessage(name);
+       }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="box"></div> 
+<script>
+let s = "", n = 1; color="";
+
+while ( n <= 11){
+if (n % 2 == 0) color="green"
+// s += `<img src="images/${n}.jpg" style="border: 7px solid green">`;
+
+else color  = "blue"
+s += `<img src="images/${n}.jpg" style="border: 7px solid ${color}">`;
+
+n++;
+}
+
+box.innerHTML = s;
+
+
+</script>
+<img src="images/1.jpg" style="border: 7px solid green">
+
+
+
+
+
+
+
+
+
+</body>
+</html>

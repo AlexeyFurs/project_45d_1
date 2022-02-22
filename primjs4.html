@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="pic">
+    
+</div>
+
+
+    <script>
+let n = +prompt("Введите номер картинки:"); //Преобразует символ в число "6" -> 6
+
+//let n = parseFloat(prompt("Введите номер картинки:"));
+
+//Логические операторы:
+// && - и
+// || - или
+
+
+if (n >= 1 && n <=10) {
+
+   t = prompt("Введите тип файла картинки");
+    
+   if (t == "jpg" || t == "png") {  
+
+pic.innerHTML = `<img src="images/${n}.jpg" alt="">`;
+}
+else {
+    alert (`Неверный тип картинки ${t} , должно быть jpg или png`);
+
+}
+}
+else {
+    alert (`Неверный номер ${n}.${t} , должно быть (1-11)`);
+}
+
+}
+
+
+
+
+    </script>
+
+</body>
+</html>

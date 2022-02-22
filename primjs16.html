@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td{
+        border:1px solid #817381;
+        color: white;
+    }
+    tr:nth-child(even){
+        background: crimson;
+    }
+    tr:nth-child(odd){
+        background: teal;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    img{
+
+    }
+</style>
+<body>
+    <div id="tab1"></div>
+    <a href></a>
+    <script>
+
+let x = prompt("введите кол-во столбцов");
+let y = prompt("введите кол-во строк")
+
+let count = 1;
+let tab = "<table><tbody>";
+let number = 1;
+for (i=1; i<=y; i++){
+
+tab += "<tr>";
+    
+    for(j=1; j<=x; j++) {
+        if(number++ >11) number = 1
+        tab += `<td>
+        <a href=images/${number}.png>Ячейка ${count++}</a>
+        </td>`;
+    }
+    tab += "</tr>";
+}
+
+
+tab += "</table></tbody>"
+
+tab1.innerHTML = tab;
+    </script>
+<!-- <table>
+    <tbody>
+    <tr>
+        <td>Ячейка1</td>
+        <td>Ячейка2</td>
+        <td>Ячейка3</td>
+        <td>Ячейка4</td>
+        <td>Ячейка5</td>
+    </tr>
+    <tr>
+        <td>Ячейка1</td>
+        <td>Ячейка2</td>
+        <td>Ячейка3</td>
+        <td>Ячейка4</td>
+        <td>Ячейка5</td>
+    </tr>
+    <tr>
+        <td>Ячейка1</td>
+        <td>Ячейка2</td>
+        <td>Ячейка3</td>
+        <td>Ячейка4</td>
+        <td>Ячейка5</td>
+    </tr>
+    <tr>
+        <td>Ячейка1</td>
+        <td>Ячейка2</td>
+        <td>Ячейка3</td>
+        <td>Ячейка4</td>
+        <td>Ячейка5</td>
+    </tr>
+    <tr>
+        <td>Ячейка1</td>
+        <td>Ячейка2</td>
+        <td>Ячейка3</td>
+        <td>Ячейка4</td>
+        <td>Ячейка5</td>
+    </tr>
+    
+</tbody>
+</table> -->
+
+
+
+</body>
+</html>
